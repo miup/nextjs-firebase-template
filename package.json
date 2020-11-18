@@ -5,7 +5,10 @@
   "author": "miup <contact@miup.blue>",
   "repository": "git@github.com:miup/nextjs-firebase-template.git",
   "scripts": {
-    "lint": "eslint '{src,test}/**/*.{ts,tsx}'"
+    "clean": "rm -rf ./dist && rm -rf node_modules/.cache && yarn install",
+    "lint": "eslint '{src,test}/**/*.{ts,tsx}'",
+    "build": "yarn clean && tsc --project src/functions && tcm src/app/styles && tcm src/app/pages && tcm src/app/components && next build src/app && cp package.json ./dist/functions && cp yarn.lock ./dist/functions && yarn create-public",
+    "create-public": "mkdir -p ./dist/public && cp -r src/public/* ./dist/public && mkdir -p dist/public/static && cp -RL src/app/public/static/* dist/public/static"
   },
   "dependencies": {
     "firebase-admin": "^9.4.1",
@@ -17,9 +20,12 @@
     "typescript": "3.8.3"
   },
   "devDependencies": {
+    "@types/module-alias": "^2.0.0",
+    "@types/react": "16.9.56",
+    "@types/react-dom": "16.9.9",
+    "@types/webpack": "4.41.25",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
-    "@types/module-alias": "^2.0.0",
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-jest": "^24.1.3",
@@ -29,7 +35,8 @@
     "eslint-plugin-simple-import-sort": "^6.0.0",
     "firebase-tools": "^8.16.2",
     "fixpack": "^3.0.6",
-    "prettier": "^2.1.2"
+    "prettier": "^2.1.2",
+    "typed-css-modules": "^0.6.4"
   },
   "engines": {
     "node": "10"
