@@ -1,0 +1,8 @@
+{
+  "name": "nextjs-firebase-template",
+  "version": "1.0.0",
+  "repository": "git@github.com:miup/nextjs-firebase-template.git",
+  "author": "miup <contact@miup.blue>",
+  "license": "UNLICENSED",
+  "private": true
+}
