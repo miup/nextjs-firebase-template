@@ -15,17 +15,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "paths": {
-      "~admin/*": [
-        "./src/admin/*"
+      "~/*": [
+        "./src/app/*"
       ],
-      "~admin/": [
-        "./src/admin/"
-      ],
-      "~functions/*": [
-        "./src/functions/*"
-      ],
-      "~functions/": [
-        "./src/functions/"
+      "~/": [
+        "./src/app/"
       ],
       "@test/*": ["test/*"]
     }
