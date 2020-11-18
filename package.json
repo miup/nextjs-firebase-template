@@ -4,13 +4,17 @@
   "license": "UNLICENSED",
   "author": "miup <contact@miup.blue>",
   "repository": "git@github.com:miup/nextjs-firebase-template.git",
-  "devDependencies": {
-    "fixpack": "^3.0.6",
-    "firebase-tools": "^8.16.2"
-  },
   "dependencies": {
     "firebase-admin": "^9.4.1",
-    "firebase-functions": "^3.11.0"
+    "firebase-functions": "^3.11.0",
+    "next": "^10.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "typescript": "3.8.3"
+  },
+  "devDependencies": {
+    "firebase-tools": "^8.16.2",
+    "fixpack": "^3.0.6"
   },
   "engines": {
     "node": "10"
