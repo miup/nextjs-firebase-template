@@ -1,8 +1,14 @@
 {
   "name": "nextjs-firebase-template",
   "version": "1.0.0",
-  "repository": "git@github.com:miup/nextjs-firebase-template.git",
-  "author": "miup <contact@miup.blue>",
   "license": "UNLICENSED",
+  "author": "miup <contact@miup.blue>",
+  "repository": "git@github.com:miup/nextjs-firebase-template.git",
+  "devDependencies": {
+    "fixpack": "^3.0.6"
+  },
+  "engines": {
+    "node": "10"
+  },
   "private": true
 }
