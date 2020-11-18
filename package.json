@@ -5,7 +5,12 @@
   "author": "miup <contact@miup.blue>",
   "repository": "git@github.com:miup/nextjs-firebase-template.git",
   "devDependencies": {
-    "fixpack": "^3.0.6"
+    "fixpack": "^3.0.6",
+    "firebase-tools": "^8.16.2"
+  },
+  "dependencies": {
+    "firebase-admin": "^9.4.1",
+    "firebase-functions": "^3.11.0"
   },
   "engines": {
     "node": "10"
