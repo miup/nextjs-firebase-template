@@ -39,4 +39,4 @@ export const ssr = functionsBuilder((f) =>
     logger.log(`handle time: ${afterTimeHandle - beforeTimeHandle}`)
     return
   })
-)
+)((f) => f.runWith({ memory: '1GB' }))
