@@ -1,7 +1,6 @@
 import { logger } from 'firebase-functions'
 import * as functions from 'firebase-functions'
 import next from 'next'
-import * as path from 'path'
 
 type Built<T> = functions.CloudFunction<T> | functions.HttpsFunction
 type Builder<T> = (builder: functions.FunctionBuilder) => Built<T>
@@ -18,7 +17,6 @@ export default function functionsBuilder<T>(
 // constants
 const app = next({
   dev: false,
-  conf: { distDir: `${path.relative(process.cwd(), __dirname)}/next` },
 })
 const handle = app.getRequestHandler()
 

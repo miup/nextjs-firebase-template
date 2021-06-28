@@ -4,7 +4,8 @@
     "indexes": "firestore.indexes.json"
   },
   "functions": {
-    "source": "dist/functions"
+    "source": "dist/functions",
+    "runtime": "nodejs12"
   },
   "hosting": {
     "public": "dist/public",
